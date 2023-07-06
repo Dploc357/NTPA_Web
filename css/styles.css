@@ -547,14 +547,14 @@ a {
     transform: translateX(-50%);
 }
 
-.text2{
+.text2 {
     font-size: 20px;
 }
 
 /* Mobile */
 @media only screen and (max-width: 46.1875em) {
     .nav-menu {
-        transition: .7s;
+        transition: .4s;
         position: fixed;
         display: block;
         z-index: 9999;
@@ -607,7 +607,7 @@ a {
         margin-top: 150px;
     }
 
-    .main-content{
+    .main-content {
         margin-top: 10px;
     }
 
@@ -621,55 +621,190 @@ a {
     .main-content__first-goods-items-s,
     .main-content__first-goods-items-t {
         width: 500px;
-        height: 300px;  
+        height: 300px;
         margin-top: 50px;
         text-align: center;
     }
 
-    .main-content__partners-text{
+    .main-content__partners-text {
         width: 120px;
     }
+
     .main-content__first-goods-items-main,
-    .main-content__first-goods-items-header{
+    .main-content__first-goods-items-header {
         margin-left: 0;
     }
 
-    .footer__first-content-l-text{
+    .footer__first-content-l-text {
         display: none;
     }
 
-    .footer__first-content-l-image{
-       display: none;
+    .footer__first-content-l-image {
+        display: none;
     }
-    .grid_footer{
+
+    .grid_footer {
         width: 95%;
     }
-    .footer__email-l-text{
+
+    .footer__email-l-text {
         font-size: 20px;
     }
-    .femail-icon{
+
+    .femail-icon {
         font-size: 40px;
     }
-    .footer__email-submit-form{
+
+    .footer__email-submit-form {
         height: 50px;
     }
+
     .footer__email-submit-form input {
         width: 400px;
         height: 30px;
         font-size: 15px;
     }
-    .footer__email-submit-form button{
+
+    .footer__email-submit-form button {
         margin-right: 5px;
         width: 300px;
         height: 45px;
         font-size: 15px;
     }
-    .footer__copyright{
+
+    .footer__copyright {
         margin-top: 10px;
     }
 
     .footer {
         height: 630px;
+    }
+}
+
+@media only screen and (max-width: 23.5em) {
+    .footer__email-submit-form input {
+        width: 10px;
+    }
+
+    .main-content__first-goods-items-n,
+    .main-content__first-goods-items-f,
+    .main-content__first-goods-items-s,
+    .main-content__first-goods-items-t {
+        width: 300px;
+        height: 280px;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .footer {
+        margin-top: 10px;
+        height: 820px;
+    }
+
+    .header__slider-image img {
+        width: 360px;
+        height: 300px;
+    }
+
+    .fa-bars {
+        padding-bottom: 17px;
+        font-size: 45px;
+    }
+
+    .main-content__partners-image {
+        margin-top: 10px;
+    }
+
+    .nav-menu__list-items a {
+        line-height: 3;
+        text-decoration: none;
+        color: #333;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .nav-menu__list {
+        margin-top: 100px;
+        margin-left: 0;
+
+    }
+
+    .nav-menu-close {
+        font-size: 50px;
+    }
+
+    .nav-menu__list-mobile-phone img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .nav-menu__list-mobile-phone p {
+        font-size: 20px;
+    }
+
+    .grid_footer {
+        width: 100%;
+    }
+
+    .footer__first-content {
+        padding-top: 0;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__first-content-r {
+        padding-top: 0;
+        padding-bottom: 10px;
+    }
+
+    .text2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .footer__first-content-r-contactUs {
+        font-size: 25px;
+    }
+
+    .footer__first-content-maps img {        
+        border-radius: 12px;
+        width: 300px;
+    }
+
+    .footer__first-content-maps {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        border: none;
+        margin-bottom: 20px;
+    }
+    .footer__email{
+        margin-top: 20px;
+        flex-direction: column;
+        padding-bottom: 85px;
+    }
+    .footer__email-submit-form{
+        margin-top: 10px;
+        position: relative;
+        width: 280px;
+    }
+    .footer__email-submit-form input{
+        width: 200px;
+    }
+    .footer__email-submit-form button{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 120px;
+        width: 150px;
+    }
+    .footer__copyright{
+        flex-direction: column-reverse;
+    }
+    .footer__copyright-content{
+        padding-top: 10px;
+        font-size: 12px;
     }
 }
 
