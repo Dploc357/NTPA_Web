@@ -5,24 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phu Anh Pharmacy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="icon" href="img/NTPA_Logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
     <div class="web">
-
         <header class="header">
             <nav class="header__nav">
                 <div class="header__nav-logo">
@@ -30,7 +32,7 @@
                 </div>
                 <ul class="header__nav-list">
                     <li class="header__nav-list-link text">
-                        <a class="header__nav-list-text text home" href="#home">Trang Chủ</a>
+                        <a class="header__nav-list-text text home" href="#">Trang Chủ</a>
                     </li>
                     <li class="header__nav-list-link text">
                         <a class="header__nav-list-text text" href="#category">Danh Mục</a>
@@ -54,37 +56,116 @@
                         <p class="header__nav-contact-des-content text">0898824333</p>
                     </div>
                 </div>
+
+                <div id="nav-mobile" class="nav-mobile-bar">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <div id="nav-menu" class="nav-menu">
+                    <ul class="nav-menu__list">
+                        <li class="nav-menu__list-items text">
+                            <i class="fa-solid fa-house-chimney homepage-icon"></i>
+                            <a href="#">Trang Chủ</a>
+                        </li>
+                        <li class="nav-menu__list-items text">
+                            <i class="fa-solid fa-rectangle-list category-icon"></i>
+                            <a href="#category">Danh Mục</a>
+                        </li>
+                        <li class="nav-menu__list-items text">
+                            <i class="fa-solid fa-address-card about-icon"></i>
+                            <a href="#contact">Về Chúng Tôi</a>
+                        </li>
+                        <li class="nav-menu__list-items text">
+                            <i class="fa-solid fa-location-dot location-icon"></i>
+                            <a target="_blank"
+                                href="https://www.google.com/maps/dir//NH%C3%80+THU%E1%BB%90C+PH%C3%9A+ANH,+A3,
+                            +Ch%E1%BB%A3,+Phong+%C4%90i%E1%BB%81n,+C%E1%BA%A7n+Th%C6%A1,+Vi%E1%BB%87t+Nam/@9.9970295,105.7154549,20z/data=!4m8!
+                            4m7!1m0!1m5!1m1!1s0x31a089143bcc68ed:0x283c15c91f775b4b!2m2!1d105.7156107!2d9.9969672?hl=vi-VN&entry=ttu"><span>Vị
+                                    Trí</span></a>
+                        </li>
+                        <li class="nav-menu__list-mobile-phone text">
+                            <a href="tel:098824333">
+                                <p>Hot Line</p>
+                            </a>
+                            <a href="tel:098824333">
+                                <img src="img/mobile-phone-icon.png" alt="">
+                            </a>
+                        </li>
+                        <i id="nav-menu-close" class="ri-close-line nav-menu-close"></i>
+                    </ul>
+                </div>
+                <div id="nav-overlay" class="nav-overlay"></div>
             </nav>
 
             <div class="header__slider">
                 <div class="header__slider-image">
-                    <img src="img/bg1.png" alt="">
+                    <img data-lazy="" src="img/bg1.png" alt="">
                 </div>
                 <div class="header__slider-image">
-                    <img src="img/bg2.png" alt="">
+                    <img data-lazy="" src="img/bg2.png" src="" alt="">
                 </div>
                 <div class="header__slider-image">
-                    <img src="img/bg3.png" alt="">
+                    <img data-lazy="" src="img/bg3.png" src="" alt="">
                 </div>
                 <div class="header__slider-image">
-                    <img src="img/bg4.png" alt="">
+                    <img data-lazy="" src="img/bg4.png" src="" alt="">
                 </div>
             </div>
         </header>
         <div id="category" class="main-content">
             <div class="main-content__first-goods">
                 <div class="main-content__first-goods-items-f">
-
+                    <div class="main-content__first-goods-items-header text">
+                        <p>GET ALL YOUR</p>
+                    </div>
+                    <div class="main-content__first-goods-items-main text">
+                        <p>Medication at <br>
+                            One Place</p>
+                    </div>
+                    <div class="main-content__first-goods-items-footer text">
+                        <i class="ri-arrow-right-circle-fill main-arrows"></i>
+                        <p>Shop Now</p>
+                    </div>
                 </div>
                 <div class="main-content__first-goods-items-s">
-
+                    <div class="main-content__first-goods-items-header text">
+                        <p>GET ALL YOUR</p>
+                    </div>
+                    <div class="main-content__first-goods-items-main text">
+                        <p>Medication at <br>
+                            One Place</p>
+                    </div>
+                    <div class="main-content__first-goods-items-footer text">
+                        <i class="ri-arrow-right-circle-fill main-arrows"></i>
+                        <p>Shop Now</p>
+                    </div>
                 </div>
                 <div class="main-content__first-goods-items-t">
-
+                    <div class="main-content__first-goods-items-header text">
+                        <p>GET ALL YOUR</p>
+                    </div>
+                    <div class="main-content__first-goods-items-main text">
+                        <p>Medication at <br>
+                            One Place</p>
+                    </div>
+                    <div class="main-content__first-goods-items-footer text">
+                        <i class="ri-arrow-right-circle-fill main-arrows"></i>
+                        <p>Shop Now</p>
+                    </div>
                 </div>
 
                 <div class="main-content__first-goods-items-n">
-
+                    <div class="main-content__first-goods-items-header text">
+                        <p>GET ALL YOUR</p>
+                    </div>
+                    <div class="main-content__first-goods-items-main text">
+                        <p>Medication at <br>
+                            One Place</p>
+                    </div>
+                    <div class="main-content__first-goods-items-footer text">
+                        <i class="ri-arrow-right-circle-fill main-arrows"></i>
+                        <p>Shop Now</p>
+                    </div>
                 </div>
             </div>
 
@@ -96,25 +177,27 @@
                 </div>
                 <div class="main-content__partners-all-icon">
                     <div class="main-content__partners-image">
-                        <img src="img/dhg-pharmaceutical-joint-stock-company--600.png" alt="">
+                        <img data-lazy="img/dhg-pharmaceutical-joint-stock-company--600.png"
+                            src="img/dhg-pharmaceutical-joint-stock-company--600.png" alt="">
                     </div>
                     <div class="main-content__partners-image">
-                        <img src="img/cty-duoc-cp-imexpharm.jpg" alt="">
+                        <img data-lazy="img/cty-duoc-cp-imexpharm.jpg" src="img/cty-duoc-cp-imexpharm.jpg" alt="">
                     </div>
                     <div class="main-content__partners-image">
-                        <img src="img/dhg-pharmaceutical-joint-stock-company--600.png" alt="">
+                        <img data-lazy="img/Sanofi-Logo.jpg" src="img/Sanofi-Logo.jpg" alt="">
                     </div>
                     <div class="main-content__partners-image">
-                        <img src="img/dhg-pharmaceutical-joint-stock-company--600.png" alt="">
+                        <img data-lazy="img/512x512.b891b9bb183adb80b6bc7d981ad71011.ai.1.png"
+                            src="img/512x512.b891b9bb183adb80b6bc7d981ad71011.ai.1.png" alt="">
                     </div>
                     <div class="main-content__partners-image">
-                        <img src="img/dhg-pharmaceutical-joint-stock-company--600.png" alt="">
+                        <img data-lazy="img/indico.png" src="img/indico.png" alt="">
                     </div>
                     <div class="main-content__partners-image">
-                        <img src="img/dhg-pharmaceutical-joint-stock-company--600.png" alt="">
+                        <img data-lazy="img/linhdat.png" src="img/linhdat.png" alt="">
                     </div>
                     <div class="main-content__partners-image">
-                        <img src="img/dhg-pharmaceutical-joint-stock-company--600.png" alt="">
+                        <img data-lazy="img/logoopc.jpg" src="img/logoopc.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -131,15 +214,15 @@
                         <img class="footer__first-content-l-image" src="img/Logo.png" alt="">
                     </div>
                     <div class="footer__first-content-r">
-                        <p class="footer__first-content-r-contactUs text">
+                        <p class="footer__first-content-r-contactUs text text2">
                             Contact Us
                         </p>
-                        <p class="footer__first-content-r-location text">
+                        <p class="footer__first-content-r-location text text2">
                             <span>Location:</span> <br>
                             A3, KDC Chợ Mỹ Khánh, Xã Mỹ Khánh <br>
                             Huyện Phong Điền, TP Cần Thơ.
                         </p>
-                        <p class="footer__first-content-r-contact text">
+                        <p class="footer__first-content-r-contact text text2">
                             <span>Contact Us:</span> <br>
                             (+84)898824333 <br>
                             nhathuocphuanh@gmail.com
@@ -171,7 +254,25 @@
                 </div>
 
                 <div class="footer__copyright">
-
+                    <div class="footer_copyright-copy">
+                        <p class="footer__copyright-content text">© Copyright 2023 | PhuAnhPharmacyOriginal | All
+                            Right
+                            Reserved</p>
+                    </div>
+                    <div class="copyright-icon">
+                        <a target="_blank" href="https://www.instagram.com/">
+                            <i class="ri-instagram-fill insta-icon"></i>
+                        </a>
+                        <a target="_blank" href="https://www.facebook.com/">
+                            <i class="ri-facebook-fill face-icon"></i>
+                        </a>
+                        <a target="_blank" href="https://twitter.com/">
+                            <i class="ri-twitter-fill twit-icon"></i>
+                        </a>
+                        <a target="_blank" href="tel:098824333">
+                            <i class="ri-phone-fill phone-icon"></i>
+                        </a>
+                    </div>
                 </div>
 
             </div>
