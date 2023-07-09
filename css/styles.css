@@ -16,12 +16,14 @@ a {
 }
 
 .header__nav {
-    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 130px;
     background-color: #44c692;
+    position: sticky;
+    top: 0;
+    z-index: 9998;
 }
 
 .header__nav-logo {
@@ -555,6 +557,7 @@ a {
 
 
 @media screen and (max-width:1170px) {
+
     .header__nav-contact,
     .header__nav-list {
         display: none;
@@ -573,6 +576,9 @@ a {
     .header__nav {
         height: 80px;
         justify-content: space-between;
+        position: sticky;
+        top: 0;
+        z-index: 9998;
     }
 
     .header {
@@ -673,7 +679,7 @@ a {
 
     }
 
-    .nav-menu__list-mobile-phone{
+    .nav-menu__list-mobile-phone {
         right: 20px;
     }
 
@@ -752,7 +758,7 @@ a {
         font-size: 17px;
     }
 
-    .footer__email-submit-form button:hover{
+    .footer__email-submit-form button:hover {
         transform: translateX(-50%);
     }
 
@@ -778,6 +784,7 @@ a {
         height: 100%;
     }
 }
+
 .show-menu {
     right: 0;
 }

@@ -25,77 +25,78 @@
 <body>
 
     <div class="web">
-        <header class="header">
-            <nav class="header__nav">
-                <div class="header__nav-logo">
-                    <img id="reloadImage" src="img/Logo.png" alt="">
+        <nav class="header__nav">
+            <div class="header__nav-logo">
+                <img id="reloadImage" src="img/Logo.png" alt="">
+            </div>
+            <ul class="header__nav-list">
+                <li class="header__nav-list-link text">
+                    <a class="header__nav-list-text text active" onclick="changeActiveLink(event, 'home')" href="#">Trang Chủ</a>
+                </li>
+                <li class="header__nav-list-link text">
+                    <a class="header__nav-list-text text" onclick="changeActiveLink(event, 'category')" href="#category">Danh Mục</a>
+                </li>
+                <li class="header__nav-list-link text">
+                    <a class="header__nav-list-text text" onclick="changeActiveLink(event, 'about')" href="#contact">Về Chúng Tôi</a>
+                </li>
+                <li class="header__nav-list-link text">
+                    <a target="_blank" class="header__nav-list-text text"
+                        href="https://www.google.com/maps/dir//NH%C3%80+THU%E1%BB%90C+PH%C3%9A+ANH,+A3,
+                    +Ch%E1%BB%A3,+Phong+%C4%90i%E1%BB%81n,+C%E1%BA%A7n+Th%C6%A1,+Vi%E1%BB%87t+Nam/@9.9970295,105.7154549,20z/data=!4m8!
+                    4m7!1m0!1m5!1m1!1s0x31a089143bcc68ed:0x283c15c91f775b4b!2m2!1d105.7156107!2d9.9969672?hl=vi-VN&entry=ttu">Vị Trí</a>
+                </li>
+            </ul>
+            <div class="header__nav-contact">
+                <a href="tel:098824333">
+                    <img src="img/phone-flat.png" alt="">
+                </a>
+                <div class="header__nav-contact-des">
+                    <p class="header__nav-contact-des-content text bold">Hotline</p>
+                    <p class="header__nav-contact-des-content text">0898824333</p>
                 </div>
-                <ul class="header__nav-list">
-                    <li class="header__nav-list-link text">
-                        <a class="header__nav-list-text text active" onclick="changeActiveLink(event, 'home')" href="#">Trang Chủ</a>
+            </div>
+
+            <div id="nav-mobile" class="nav-mobile-bar">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div id="nav-menu" class="nav-menu">
+                <ul class="nav-menu__list">
+                    <li class="nav-menu__list-items text">
+                        <i class="fa-solid fa-house-chimney homepage-icon"></i>
+                        <a href="#">Trang Chủ</a>
                     </li>
-                    <li class="header__nav-list-link text">
-                        <a class="header__nav-list-text text" onclick="changeActiveLink(event, 'category')" href="#category">Danh Mục</a>
+                    <li class="nav-menu__list-items text">
+                        <i class="fa-solid fa-rectangle-list category-icon"></i>
+                        <a href="#category">Danh Mục</a>
                     </li>
-                    <li class="header__nav-list-link text">
-                        <a class="header__nav-list-text text" onclick="changeActiveLink(event, 'about')" href="#contact">Về Chúng Tôi</a>
+                    <li class="nav-menu__list-items text">
+                        <i class="fa-solid fa-address-card about-icon"></i>
+                        <a href="#contact">Về Chúng Tôi</a>
                     </li>
-                    <li class="header__nav-list-link text">
-                        <a target="_blank" class="header__nav-list-text text"
+                    <li class="nav-menu__list-items text">
+                        <i class="fa-solid fa-location-dot location-icon"></i>
+                        <a target="_blank"
                             href="https://www.google.com/maps/dir//NH%C3%80+THU%E1%BB%90C+PH%C3%9A+ANH,+A3,
                         +Ch%E1%BB%A3,+Phong+%C4%90i%E1%BB%81n,+C%E1%BA%A7n+Th%C6%A1,+Vi%E1%BB%87t+Nam/@9.9970295,105.7154549,20z/data=!4m8!
-                        4m7!1m0!1m5!1m1!1s0x31a089143bcc68ed:0x283c15c91f775b4b!2m2!1d105.7156107!2d9.9969672?hl=vi-VN&entry=ttu">Vị Trí</a>
+                        4m7!1m0!1m5!1m1!1s0x31a089143bcc68ed:0x283c15c91f775b4b!2m2!1d105.7156107!2d9.9969672?hl=vi-VN&entry=ttu"><span>Vị
+                                Trí</span></a>
                     </li>
+                    <li class="nav-menu__list-mobile-phone text">
+                        <a href="tel:098824333">
+                            <p>Hot Line</p>
+                        </a>
+                        <a href="tel:098824333">
+                            <img src="img/mobile-phone-icon.png" alt="">
+                        </a>
+                    </li>
+                    <i id="nav-menu-close" class="ri-close-line nav-menu-close"></i>
                 </ul>
-                <div class="header__nav-contact">
-                    <a href="tel:098824333">
-                        <img src="img/phone-flat.png" alt="">
-                    </a>
-                    <div class="header__nav-contact-des">
-                        <p class="header__nav-contact-des-content text bold">Hotline</p>
-                        <p class="header__nav-contact-des-content text">0898824333</p>
-                    </div>
-                </div>
-
-                <div id="nav-mobile" class="nav-mobile-bar">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-
-                <div id="nav-menu" class="nav-menu">
-                    <ul class="nav-menu__list">
-                        <li class="nav-menu__list-items text">
-                            <i class="fa-solid fa-house-chimney homepage-icon"></i>
-                            <a href="#">Trang Chủ</a>
-                        </li>
-                        <li class="nav-menu__list-items text">
-                            <i class="fa-solid fa-rectangle-list category-icon"></i>
-                            <a href="#category">Danh Mục</a>
-                        </li>
-                        <li class="nav-menu__list-items text">
-                            <i class="fa-solid fa-address-card about-icon"></i>
-                            <a href="#contact">Về Chúng Tôi</a>
-                        </li>
-                        <li class="nav-menu__list-items text">
-                            <i class="fa-solid fa-location-dot location-icon"></i>
-                            <a target="_blank"
-                                href="https://www.google.com/maps/dir//NH%C3%80+THU%E1%BB%90C+PH%C3%9A+ANH,+A3,
-                            +Ch%E1%BB%A3,+Phong+%C4%90i%E1%BB%81n,+C%E1%BA%A7n+Th%C6%A1,+Vi%E1%BB%87t+Nam/@9.9970295,105.7154549,20z/data=!4m8!
-                            4m7!1m0!1m5!1m1!1s0x31a089143bcc68ed:0x283c15c91f775b4b!2m2!1d105.7156107!2d9.9969672?hl=vi-VN&entry=ttu"><span>Vị
-                                    Trí</span></a>
-                        </li>
-                        <li class="nav-menu__list-mobile-phone text">
-                            <a href="tel:098824333">
-                                <p>Hot Line</p>
-                            </a>
-                            <a href="tel:098824333">
-                                <img src="img/mobile-phone-icon.png" alt="">
-                            </a>
-                        </li>
-                        <i id="nav-menu-close" class="ri-close-line nav-menu-close"></i>
-                    </ul>
-                </div>
-                <div id="nav-overlay" class="nav-overlay"></div>
-            </nav>
+            </div>
+            <div id="nav-overlay" class="nav-overlay"></div>
+        </nav>
+        <header class="header">
+            
 
             <div class="header__slider">
                 <div class="header__slider-image">
