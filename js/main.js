@@ -30,20 +30,13 @@ $(document).ready(function () {
         lazyLoad: 'ondemand',
         responsive: [
             {
-                breakpoint: 341,
+                breakpoint: 1171,
                 settings: {
                     slidesToShow: 1,
                     autoplaySpeed: 4000,
                 }
             },
 
-            {
-                breakpoint: 569,
-                settings: {
-                    slidesToShow: 1,
-                    autoplaySpeed: 4000,
-                }
-            },
         ]
     });
 });
