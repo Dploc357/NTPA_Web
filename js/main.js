@@ -36,6 +36,14 @@ $(document).ready(function () {
                     autoplaySpeed: 4000,
                 }
             },
+
+            {
+                breakpoint: 569,
+                settings: {
+                    slidesToShow: 1,
+                    autoplaySpeed: 4000,
+                }
+            },
         ]
     });
 });

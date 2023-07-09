@@ -777,7 +777,7 @@ a {
     }
 }
 
-@media screen and (min-width:568px) {
+@media screen and (max-width:568px) {
     .header__nav-contact,
     .header__nav-list {
         display: none;
