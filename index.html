@@ -32,13 +32,13 @@
                 </div>
                 <ul class="header__nav-list">
                     <li class="header__nav-list-link text">
-                        <a class="header__nav-list-text text home" href="#">Trang Chủ</a>
+                        <a class="header__nav-list-text text active" onclick="changeActiveLink(event, 'home')" href="#">Trang Chủ</a>
                     </li>
                     <li class="header__nav-list-link text">
-                        <a class="header__nav-list-text text" href="#category">Danh Mục</a>
+                        <a class="header__nav-list-text text" onclick="changeActiveLink(event, 'category')" href="#category">Danh Mục</a>
                     </li>
                     <li class="header__nav-list-link text">
-                        <a class="header__nav-list-text text" href="#contact">Về Chúng Tôi</a>
+                        <a class="header__nav-list-text text" onclick="changeActiveLink(event, 'about')" href="#contact">Về Chúng Tôi</a>
                     </li>
                     <li class="header__nav-list-link text">
                         <a target="_blank" class="header__nav-list-text text"

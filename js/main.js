@@ -25,20 +25,15 @@ $(document).ready(function () {
         arrows: false,
         dots: false,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 4000,
         speed: 1000,
         lazyLoad: 'ondemand',
         responsive: [
             {
-                breakpoint: 740,
+                breakpoint: 341,
                 settings: {
-                    slidesToShow: 1
-                }
-            },
-            {
-                breakpoint: 377,
-                settings: {
-                    slidesToShow: 1
+                    slidesToShow: 1,
+                    autoplaySpeed: 4000,
                 }
             },
         ]
@@ -81,4 +76,14 @@ function linkAction() {
     navOverlay.classList.remove('display')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+function changeActiveLink(event, link) {
+    // Xóa lớp active từ tất cả các thẻ a
+    var navLinks = document.getElementsByClassName('header__nav-list-text');
+    for (var i = 0; i < navLinks.length; i++) {
+        navLinks[i].classList.remove('active');
+    }
+    // Thêm lớp active cho thẻ a được nhấp vào
+    event.target.classList.add('active');
+}
 
