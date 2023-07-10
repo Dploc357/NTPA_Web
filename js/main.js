@@ -3,7 +3,50 @@ document.getElementById('reloadImage').addEventListener('click', function () {
 });
 
 $(document).ready(function () {
-    $('.header__slider').slick({
+    $(".header__slider").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        autoplayTimeout:4000,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    });
+
+    $(".main-content__partners-all-icon").owlCarousel({
+        loop: true,
+        margin: 100,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        autoplayTimeout:4000,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 6
+            }
+        }
+    });
+});
+
+$(document).ready(function () {
+    $('').slick({
         infinite: false,
         slidesToShow: 1,
         slidesToScroll: 1,

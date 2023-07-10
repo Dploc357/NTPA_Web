@@ -16,6 +16,9 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.theme.green.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet">
@@ -31,13 +34,16 @@
             </div>
             <ul class="header__nav-list">
                 <li class="header__nav-list-link text">
-                    <a class="header__nav-list-text text active" onclick="changeActiveLink(event, 'home')" href="#">Trang Chủ</a>
+                    <a class="header__nav-list-text text active" onclick="changeActiveLink(event, 'home')"
+                        href="#">Trang Chủ</a>
                 </li>
                 <li class="header__nav-list-link text">
-                    <a class="header__nav-list-text text" onclick="changeActiveLink(event, 'category')" href="#category">Danh Mục</a>
+                    <a class="header__nav-list-text text" onclick="changeActiveLink(event, 'category')"
+                        href="#category">Danh Mục</a>
                 </li>
                 <li class="header__nav-list-link text">
-                    <a class="header__nav-list-text text" onclick="changeActiveLink(event, 'about')" href="#contact">Về Chúng Tôi</a>
+                    <a class="header__nav-list-text text" onclick="changeActiveLink(event, 'about')" href="#contact">Về
+                        Chúng Tôi</a>
                 </li>
                 <li class="header__nav-list-link text">
                     <a target="_blank" class="header__nav-list-text text"
@@ -96,19 +102,19 @@
             <div id="nav-overlay" class="nav-overlay"></div>
         </nav>
         <header class="header">
-            
 
-            <div class="header__slider">
-                <div class="header__slider-image">
+
+            <div class="header__slider owl-carousel owl-theme">
+                <div class="header__slider-image item-3">
                     <img data-lazy="" src="img/bg1.png" alt="">
                 </div>
-                <div class="header__slider-image">
+                <div class="header__slider-image item-3">
                     <img data-lazy="" src="img/bg2.png" src="" alt="">
                 </div>
-                <div class="header__slider-image">
+                <div class="header__slider-image item-3">
                     <img data-lazy="" src="img/bg3.png" src="" alt="">
                 </div>
-                <div class="header__slider-image">
+                <div class="header__slider-image item-3">
                     <img data-lazy="" src="img/bg4.png" src="" alt="">
                 </div>
             </div>
@@ -176,28 +182,28 @@
                     <div class="main-content__partners-text text">OUR PARTNERS</div>
                     <div class="main-content__partners-bar-r"></div>
                 </div>
-                <div class="main-content__partners-all-icon">
-                    <div class="main-content__partners-image">
+                <div class="main-content__partners-all-icon owl-carousel owl-theme">
+                    <div class="main-content__partners-image item">
                         <img data-lazy="img/dhg-pharmaceutical-joint-stock-company--600.png"
                             src="img/dhg-pharmaceutical-joint-stock-company--600.png" alt="">
                     </div>
-                    <div class="main-content__partners-image">
+                    <div class="main-content__partners-image item">
                         <img data-lazy="img/cty-duoc-cp-imexpharm.jpg" src="img/cty-duoc-cp-imexpharm.jpg" alt="">
                     </div>
-                    <div class="main-content__partners-image">
+                    <div class="main-content__partners-image item">
                         <img data-lazy="img/Sanofi-Logo.jpg" src="img/Sanofi-Logo.jpg" alt="">
                     </div>
-                    <div class="main-content__partners-image">
+                    <div class="main-content__partners-image item">
                         <img data-lazy="img/512x512.b891b9bb183adb80b6bc7d981ad71011.ai.1.png"
                             src="img/512x512.b891b9bb183adb80b6bc7d981ad71011.ai.1.png" alt="">
                     </div>
-                    <div class="main-content__partners-image">
+                    <div class="main-content__partners-image item">
                         <img data-lazy="img/indico.png" src="img/indico.png" alt="">
                     </div>
-                    <div class="main-content__partners-image">
+                    <div class="main-content__partners-image item">
                         <img data-lazy="img/linhdat.png" src="img/linhdat.png" alt="">
                     </div>
-                    <div class="main-content__partners-image">
+                    <div class="main-content__partners-image item">
                         <img data-lazy="img/logoopc.jpg" src="img/logoopc.jpg" alt="">
                     </div>
                 </div>
@@ -284,6 +290,10 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
